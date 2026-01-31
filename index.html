@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛР1 HTML — Варіант 1</title>
+</head>
+
+<body>
+  <header>
+    <h1>Лабораторна робота №1 — Основи HTML</h1>
+    <p>
+      Проєкт для GitHub Pages. Без CSS.
+    </p>
+
+    <figure>
+      <!-- Поклади будь-яку картинку у папку images і перейменуй тут шлях -->
+      <img src="images/image.jpg" alt="Зображення кампусу/банер" decoding="async" width="640">
+      <figcaption>Зображення (банер/фото) для вимоги “посилання та зображення”.</figcaption>
+    </figure>
+
+    <hr>
+
+    <nav>
+      <h2>Зміст (якорі до розділів)</h2>
+      <ul>
+        <li><a href="#intro">Вступ</a></li>
+        <li><a href="#text">Оформлений текст (варіант 1)</a></li>
+        <li><a href="#structure">Структура університету (багаторівневий список)</a></li>
+        <li><a href="#rates">Курси валют (таблиця)</a></li>
+        <li><a href="#vote">Голосування (форма)</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Вступ</h2>
+      <p>
+        На цій сторінці продемонстровано роботу з базовими HTML-елементами: текст, списки, таблиці, форми,
+        зображення та гіперпосилання-якорі.
+      </p>
+      <p><a href="#top">Повернутися вгору</a></p>
+      <hr>
+    </section>
+
+    <section id="text">
+      <h2>Оформлений текст (як у варіанті 1)</h2>
+
+      <p>
+        <strong>Теорема (формулювання):</strong>
+        Для будь-якого натурального числа <em>n</em>&nbsp;&gt;&nbsp;2
+        рівняння
+        <em>a</em><sup>n</sup> + <em>b</em><sup>n</sup> = <em>c</em><sup>n</sup>
+        <strong>не має рішень</strong> при цілих ненульових числах
+        <em>a</em>, <em>b</em>, <em>c</em>.
+      </p>
+
+      <p>
+        Приклад використання підрядкового запису:
+        H<sub>2</sub>O, CO<sub>2</sub>.
+      </p>
+
+      <p><a href="#top">Повернутися вгору</a></p>
+      <hr>
+    </section>
+
+    <section id="structure">
+      <h2>Структура університету (багаторівневий список)</h2>
+
+      <ul>
+        <li>Університет
+          <ul>
+            <li>Факультет комп’ютерних наук
+              <ul>
+                <li>Кафедра програмної інженерії</li>
+                <li>Кафедра штучного інтелекту</li>
+                <li>Кафедра комп’ютерних систем</li>
+              </ul>
+            </li>
+            <li>Факультет інформаційних технологій
+              <ul>
+                <li>Кафедра інформаційних систем</li>
+                <li>Кафедра кібербезпеки</li>
+              </ul>
+            </li>
+            <li>Факультет електроніки та телекомунікацій
+              <ul>
+                <li>Кафедра телекомунікацій</li>
+                <li>Кафедра електронних пристроїв</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <p><a href="#top">Повернутися вгору</a></p>
+      <hr>
+    </section>
+
+    <section id="rates">
+      <h2>Курси валют (таблиця)</h2>
+
+      <table border="1">
+        <caption>Приклад таблиці курсів валют (умовні значення)</caption>
+        <thead>
+          <tr>
+            <th>Код</th>
+            <th>Валюта</th>
+            <th>Купівля</th>
+            <th>Продаж</th>
+            <th>Дата</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>USD</td>
+            <td>Долар США</td>
+            <td>38.20</td>
+            <td>38.90</td>
+            <td>2026-01-31</td>
+          </tr>
+          <tr>
+            <td>EUR</td>
+            <td>Євро</td>
+            <td>41.30</td>
+            <td>42.10</td>
+            <td>2026-01-31</td>
+          </tr>
+          <tr>
+            <td>PLN</td>
+            <td>Злотий</td>
+            <td>9.30</td>
+            <td>9.55</td>
+            <td>2026-01-31</td>
+          </tr>
+          <tr>
+            <td>GBP</td>
+            <td>Фунт стерлінгів</td>
+            <td>48.40</td>
+            <td>49.20</td>
+            <td>2026-01-31</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#top">Повернутися вгору</a></p>
+      <hr>
+    </section>
+
+    <section id="vote">
+      <h2>Голосування (форма)</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Який розділ був найкориснішим?</legend>
+
+          <p>
+            <label>
+              <input type="radio" name="best" value="text" required>
+              Оформлений текст
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="radio" name="best" value="list">
+              Багаторівневий список
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="radio" name="best" value="table">
+              Таблиця курсів валют
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="radio" name="best" value="form">
+              Форма голосування
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Ваш коментар:<br>
+              <textarea name="comment" rows="4" cols="40" placeholder="Напишіть кілька слів..."></textarea>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="agree" value="yes">
+              Погоджуюсь, що дані умовні
+            </label>
+          </p>
+
+          <p>
+            <button type="submit">Голосувати</button>
+            <button type="reset">Очистити</button>
+          </p>
+        </fieldset>
+      </form>
+
+      <p><a href="#top">Повернутися вгору</a></p>
+      <hr>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакти</h2>
+      <p>
+        Приклад поштового посилання:
+        <a href="mailto:student@example.com">student@example.com</a>
+      </p>
+      <p>
+        Зовнішнє посилання (можна залишити будь-яке):
+        <a href="https://knureigs.github.io/" target="_blank" rel="noopener noreferrer">Сайт курсу/матеріалів</a>
+      </p>
+
+      <p><a href="#top">Повернутися вгору</a></p>
+    </section>
+  </main>
+
+  <footer id="top">
+    <hr>
+    <p>&copy; 2026 — ЛР1 HTML, варіант 1</p>
+  </footer>
+</body>
+</html>
